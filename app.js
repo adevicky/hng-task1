@@ -1,19 +1,19 @@
-let weekDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-let currentDay = document.querySelector('[data-testid="currentDayOfTheWeek"]');
-let currentUtcTime = document.querySelector('[data-testid="currentUTC"]');
+const weekDay = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const currentDay = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+const currentUtcTime = document.querySelector('[data-testid="currentUTC"]');
+        
+            function getDay() {
+                const now = new Date();
+                const day = weekDay[now.getDay()];
+                currentDay.textContent = `${day}`
+            }
+        
 
-function newDay() {
-    let date = new date();
-    let day = weekDay[date.newDay()];
-    currentDay.textContent = `${day}`
-}
+            function getTime() {
+                const now = new Date();
+                const time = now.getTime()
+                currentUtcTime.textContent = time
+            }
 
-
-function newTime() {
-    let date = new date();
-    let time = date.newTime();
-    currentUtcTime.textContent = time
-}
-
-newDay()
-setInterval( newTime, 1000);
+            getDay();            
+           window.setInterval(getTime, 1000);
