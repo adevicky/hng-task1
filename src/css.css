@@ -13,22 +13,14 @@ h1 {
     position: relative;
     padding-right: 0px;
     padding-left: 0px;
-    padding: 10px;
+    padding: 20px;
     margin-right: auto;
     margin-left: auto;
     width: 90%;
 }
-.heading {
-    text-align: center;
-    background-color: #013d29;
-    padding: 20px;
-}
-.heading h2 {
-   color: #ffff;
-   font-size: 31px;
-}
 .hero {
     background-color: #ffff;
+    margin-bottom: 20px;
 }
 .hero h1 {
     padding: 10px 0;
@@ -45,20 +37,18 @@ h1 {
     text-align: center;
     padding: 10px 0;
 }
-.footer {
-    background-color: #013d29;
-    padding: 20px;
-}
-.footer .github-link {
-    text-align: center;
-}
-.footer a {
+.hero a {
     text-align: center;
     text-decoration: none;
     font-size: 21px;
     color: #ffff;
+    background-color: #013d29;
+    padding: 10px; 
 }
-.footer a:hover {
+.hero a:hover {
     color: #000;
+}
+.hero .github-link {
+    text-align: center;
 }
 
